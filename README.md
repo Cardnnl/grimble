@@ -1,5 +1,7 @@
 # GRIMBLE
 
-A PS1-style co-op goblin horde brawler. **Play it in your browser: https://cardnnl.github.io/grimble/**
+I will literally never update the web port ever and it'll only be here for like a week. 
 
-Solo, or online with up to 4 other browser players. Keyboard & mouse or a controller.
+I asked ai to port my game because its a lot of work for zero reward.
+
+Thank you claude!!!!
