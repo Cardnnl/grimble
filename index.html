@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
-    <title>GRIMBLE</title>
+    <title>GRIMBLE DEMO</title>
     <meta name="description" content="GRIMBLE: a PS1-style co-op goblin horde brawler. Play in your browser, solo or online with up to 4 friends.">
     <link rel="icon" type="image/png" href="TemplateData/icon.png">
     <link rel="stylesheet" href="TemplateData/style.css">
@@ -17,13 +17,6 @@
         <div id="status">LOADING...</div>
       </div>
       <div id="warning"></div>
-    </div>
-    <div id="footer">
-      <img src="TemplateData/icon.png" alt="">
-      <span class="title">GRIMBLE</span>
-      <span class="ver">v0.9.0</span>
-      <span class="hint">KEYBOARD &amp; MOUSE OR A CONTROLLER &middot; ONLINE PLAY IS WITH OTHER BROWSER PLAYERS</span>
-      <button id="fullscreen" title="Fullscreen">FULLSCREEN</button>
     </div>
     <script>
       var canvas = document.querySelector("#game");
@@ -62,7 +55,7 @@
           document.querySelector("#status").textContent = progress < 0.9 ? "LOADING... " + Math.round(100 * progress) + "%" : "WAKING THE GOBLINS...";
         }).then(function (instance) {
           document.querySelector("#loading").style.display = "none";
-          document.querySelector("#fullscreen").onclick = function () { instance.SetFullscreen(1); };
+
           canvas.focus();
         }).catch(function (message) {
           showBanner(message, "error");

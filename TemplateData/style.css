@@ -1,11 +1,11 @@
-/* GRIMBLE's web page: the game fills the window above a slim footer, on the fall key art. */
+/* GRIMBLE's web page (the demo): the game fills the window, on the sword-leap key art while it loads. */
 :root {
   --night: #1b1426;
   --plum: #3a2546;
   --gold: #f2c14e;
   --burnt: #c8572b;
   --cream: #f5e9d4;
-  --footer: 40px;
+  --footer: 0px;
 }
 
 html, body {
@@ -38,7 +38,7 @@ html, body {
   align-items: center;
   justify-content: center;
   gap: 22px;
-  background: radial-gradient(ellipse at center, rgba(27, 20, 38, 0.35), rgba(27, 20, 38, 0.85));
+  background: radial-gradient(ellipse at center, rgba(27, 20, 38, 0.1), rgba(27, 20, 38, 0.6));
 }
 
 #logo {
