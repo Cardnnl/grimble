@@ -21,7 +21,7 @@
     <div id="footer">
       <img src="TemplateData/icon.png" alt="">
       <span class="title">GRIMBLE</span>
-      <span class="ver">v0.8.0</span>
+      <span class="ver">v0.9.0</span>
       <span class="hint">KEYBOARD &amp; MOUSE OR A CONTROLLER &middot; ONLINE PLAY IS WITH OTHER BROWSER PLAYERS</span>
       <button id="fullscreen" title="Fullscreen">FULLSCREEN</button>
     </div>
@@ -40,13 +40,13 @@
       var buildUrl = "Build";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/GRIMBLE_0.8.0_Web.data.unityweb",
-        frameworkUrl: buildUrl + "/GRIMBLE_0.8.0_Web.framework.js.unityweb",
-        codeUrl: buildUrl + "/GRIMBLE_0.8.0_Web.wasm.unityweb",
+        dataUrl: buildUrl + "/GRIMBLE_0.9.0_Demo_Web.data.unityweb",
+        frameworkUrl: buildUrl + "/GRIMBLE_0.9.0_Demo_Web.framework.js.unityweb",
+        codeUrl: buildUrl + "/GRIMBLE_0.9.0_Demo_Web.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "CARDNL",
         productName: "GRIMBLE",
-        productVersion: "0.8.0",
+        productVersion: "0.9.0",
         showBanner: showBanner,
         // Saves (progress, settings, cosmetics) live in the browser's storage and stay there between visits.
         autoSyncPersistentDataPath: true,
@@ -55,7 +55,7 @@
       };
 
       var script = document.createElement("script");
-      script.src = buildUrl + "/GRIMBLE_0.8.0_Web.loader.js";
+      script.src = buildUrl + "/GRIMBLE_0.9.0_Demo_Web.loader.js";
       script.onload = function () {
         createUnityInstance(canvas, config, function (progress) {
           document.querySelector("#fill").style.width = (100 * progress) + "%";
